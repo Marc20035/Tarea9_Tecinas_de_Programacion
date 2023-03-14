@@ -9,7 +9,6 @@ public class Giroscopio extends Ciclos {
         super(marca, modelo, fechaCompra, precio);
         this.autonomiaKilometros = autonomiaKilometros;
     }
-
     @Override
 
     public void obtenerPrecio(int dias) {
