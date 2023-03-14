@@ -1,4 +1,5 @@
-package org.example;
+package org.example.Ejercicio1;
+
 import java.time.LocalDate;
 public class Bicicleta extends Ciclos {
     private int cambiosMarcha;
@@ -13,5 +14,17 @@ public class Bicicleta extends Ciclos {
     @Override
     public double obtenerPrecio() {
         return 4.90;
+    }
+
+    @Override
+    public String toString() {
+        return "Bicicleta{" +
+                "cambiosMarcha=" + cambiosMarcha +
+                ", numeroVelocidades=" + numeroVelocidades +
+                ", marca='" + marca + '\'' +
+                ", modelo='" + modelo + '\'' +
+                ", fechaCompra=" + fechaCompra +
+                ", precio=" + precio + "/hora" +
+                '}';
     }
 }

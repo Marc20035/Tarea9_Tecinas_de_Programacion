@@ -1,4 +1,6 @@
-package org.example;
+package org.example.Ejercicio1;
+import org.example.Ejercicio1.Ciclos;
+
 import java.time.LocalDate;
 public class Segway extends Ciclos {
 
@@ -17,5 +19,15 @@ public class Segway extends Ciclos {
         return 18.90;
     }
 
-
+    @Override
+    public String toString() {
+        return "Segway{" +
+                "autonomiaKilometros=" + autonomiaKilometros +
+                ", alturaPiloto=" + alturaPiloto +
+                ", marca='" + marca + '\'' +
+                ", modelo='" + modelo + '\'' +
+                ", fechaCompra=" + fechaCompra +
+                ", precio=" + precio + "/hora" +
+                '}';
+    }
 }
