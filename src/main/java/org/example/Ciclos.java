@@ -9,7 +9,14 @@ public abstract class Ciclos {
     protected LocalDate fechaCompra;
     protected double precio;
 
-    public abstract void obtenerPrecio(int dias);
+    public abstract double obtenerPrecio();
+
+    public void mostrarDatos() {
+        System.out.println("Marca: " + marca);
+        System.out.println("Modelo: " + modelo);
+        System.out.println("Fecha de compra: " + fechaCompra);
+        System.out.println("Precio: " + precio);
+    }
 
     public Ciclos(String marca, String modelo, LocalDate fechaCompra, double precio) {
         this.marca = marca;

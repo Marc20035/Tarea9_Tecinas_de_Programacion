@@ -11,20 +11,8 @@ public class Giroscopio extends Ciclos {
     }
     @Override
 
-    public void obtenerPrecio(int dias) {
-        double precioFinal = 0;
-        if (dias <= 3) {
-            precioFinal = precio;
-        } else if (dias > 3 && dias <= 7) {
-            precioFinal = precio * 0.9;
-        } else if (dias > 7 && dias <= 14) {
-            precioFinal = precio * 0.8;
-        } else if (dias > 14 && dias <= 30) {
-            precioFinal = precio * 0.7;
-        } else if (dias > 30) {
-            precioFinal = precio * 0.5;
-        }
-        System.out.println("El precio final es de " + precioFinal + " euros");
+    public double obtenerPrecio() {
+        return 29.90;
     }
 
 
